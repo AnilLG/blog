@@ -18,11 +18,12 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "India"
 title                    : "Machine Learning Stuff"
 title_separator          : "-"
+keywords                 : ["Machine Learning", "Artificial Intelligence", "Python", "Java", "Deep Learning"]
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Anil Gaikwad"
 description              : "An amazing website."
 url                      : "https://gaikwadanil.com"# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/blogs"# the subpath of your site, e.g. "/blog"
+baseurl                  : "/blogs" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -109,6 +110,7 @@ analytics:
 author:
   name             : "Anil Gaikwad"
   avatar           : /assets/profile/beard_look.png 
+  job              : "Machine Learning Engineer"
   bio              : "I am an amazing person."
   location         : "India"
   email            :
