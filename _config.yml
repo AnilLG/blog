@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "India"
 title                    : "Machine Learning Stuff"
 title_separator          : "-"
-keywords                 : ["Machine Learning", "Artificial Intelligence", "Python", "Java", "Deep Learning"]
+# keywords                 : ["Machine Learning", "Artificial Intelligence", "Python", "Java", "Deep Learning"]
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Anil Gaikwad"
 description              : "An amazing website."
@@ -110,7 +110,7 @@ analytics:
 author:
   name             : "Anil Gaikwad"
   avatar           : /assets/profile/beard_look.png 
-  job              : "Machine Learning Engineer"
+#   job              : "Machine Learning Engineer"
   bio              : "I am an amazing person."
   location         : "India"
   email            :
