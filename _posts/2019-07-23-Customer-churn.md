@@ -5,7 +5,7 @@ layout : posts
 
 
 
-# What Is Customer Churn?
+## What Is Customer Churn?
 
 <figure>
         <center>
@@ -29,8 +29,8 @@ Due to the rapid growth in the mobile phone network and advancement in the telec
 The basic layer for predicting future customer churn is data from the past. Data contains customers that already have churned (response) and their characteristics before the churn happened. We will try to predict the response for existing customers. This method belongs to the supervised learning category.
 </p>
 
-<p style = "text-align: justify">
-Customer churn is binary classification problem and there are many more classification algorithm in machine learning used to solve churn problem. The logistic regression, decision tree, naive bayes, SVM, and random forest are most popular binary classification algorithm in machine learning. 
+<p style = "text-align: justify">          
+Customer churn is binary classification problem and there are many more classification algorithm in machine learning used to solve churn problem. The logistic regression, decision tree, naive bayes, SVM, and random forest are the most popular binary classification algorithm in machine learning. 
 </p>
 
 ## How Will We Predict Customer Churn?
@@ -49,7 +49,7 @@ One of the most valuable assets of a company has a data. As data is rarely share
 ## Data looks like
 
 <p style = "text-align: justify">
- To better understand data we will load it into pandas shows shows how it looks using basic commands of pandas. 
+ To better understand data we will load it into pandas and shows how it looks using basic commands of pandas. 
  </p>
 
  <figure>
@@ -60,7 +60,7 @@ One of the most valuable assets of a company has a data. As data is rarely share
 ## Churn Visualization
 
 <p style = "text-align: justify">
-The responce variable in the given dataset is Churn. Using the pie chart shows how many percentage of churn in the given dataset. It gives the 14.5% total amount of chustomer churn in the data.
+The responce variable is <b>Churn</b> in the given dataset . Using pie chart shows how many percentage of churn in the given dataset. It shows the 14.5% total amount of chustomer churn in the data.
 </p>
 
 <img src="{{ '/assets/churn_images/churn_ratio.png'}}" class="center">
@@ -69,7 +69,7 @@ The responce variable in the given dataset is Churn. Using the pie chart shows h
 ## Feature Engineering
 
 <p style = "text-align: justify">
- Feature engineering is the process of using domain knowledge of the data to create features that make machine learning algorithms work. Feature engineering is fundamental to the application of machine learning, and is both difficult and expensive. It is an important part in machine learning. It is very common to see categorical features in a dataset. However, our machine learning algorithm can only read numerical values. It is essential to encoding categorical features into numerical values.
+ Feature engineering is the process of using domain knowledge of the data to create features that make machine learning algorithms work. Feature engineering is fundamental to the application of machine learning. It is an important part in machine learning. It is very common to see categorical features in a dataset. However, our machine learning algorithm can only read numerical values. It is essential to encoding categorical features into numerical values.
 </p>
 
 <p style = "text-align: justify">
@@ -86,7 +86,7 @@ Here we will cover two different ways of encoding categorical features:
    2. OneHotEncoder
 
 <p style = "text-align: justify">
-    These two encoders are parts of the SciKit Learn library in Python, and they are used to convert categorical data, or text data, into numbers, which our predictive models can better understand.
+    These two encoders are parts of the scikit Learn library in Python, and they are used to convert categorical data, or text data, into numbers, which our predictive models can better understand.
     If feature having two categories then LabelEncoder works well on that feature, and if feature having more than two categories then OneHotEncoder works well.
 </p>
 
@@ -97,10 +97,10 @@ Here we will cover two different ways of encoding categorical features:
 </figure>
 
 <p style = "text-align: justify">
-    The above figure shows State, International_Plan, and Voice_Mail_Plan are categorical features in the dataset. So converting this categorical features into numerical.
+    The above figure shows State, International_Plan, and Voice_Mail_Plan are categorical features in the dataset. So, this categorical features are converted into numerical using encoder.
 </p>
 <p style = "text-align: justify">
-    Applying OneHot encoding on state because it contains more than two states. The get_dummies() means OneHot encoding in pandas. Likewise other categorical features also converted into numerical.
+    Applying OneHot encoding on state feature because it contains more than two categories. Using get_dummies() converted it into numerical. Likewise other categorical features also converted into numerical.
 </p>
 
 The below figure shows how encoding performs.
@@ -111,21 +111,21 @@ The below figure shows how encoding performs.
     </center>
 </figure>
 
-## Feature Scaling or Standardization
+## Feature Scalling or Standardization
 
 <p style = "text-align: justify">
- It is a step of data preprocessing which is applied to independent variables or features of data. It basically helps to normalise the data within a particular range. Sometimes, it also helps in speeding up the calculations in an algorithm.
+ Feature scaling is a method used to normalize the range of independent variables or features of data. In data processing, it is also known as data normalization and is generally performed during the data preprocessing step. Sometimes, it also helps in speeding up the calculations in an algorithm.
 </p>
 
 <p style = "text-align: justify">
- In this dataset contains features that highly vary in magnitude and range. Normalization should be performed when the scale of a feature is irrelevant or misleading and should normalize when the scale is meaningful.
+ This dataset contains features that highly vary in magnitude and range. Normalization should be performed when the scale of a feature is irrelevant or misleading and should normalize when the scale is meaningful.
 </p>
 
 <p style = "text-align: justify">
- Feature scalling helps to weight all the features equally and for normalization the algorithm use the Euclidean Distance. If a feature in the dataset is big in scale compared to others then in algorithms where Euclidean distance is measured this big scaled feature becomes dominating and needs to be normalized. 
+ Feature scalling helps to weight all the features equally and for normalization algorithm use the Euclidean Distance. If a feature in the dataset is big in scale compared to others then in algorithms where Euclidean distance is measured this big scaled feature becomes dominating and needs to be normalized. 
 </p>
 
-<!-- <img src="{{ '/assets/churn_images/scalling.png'}}" class="center"> -->
+<img src="{{'/assets/churn_images/scalling.png'}}" class="center">
 
 ## Training And Testing Model
 
@@ -134,7 +134,7 @@ We use sklearn, a Machine Learning library in Python, to create a classifier or 
 </p>
 <p style = "text-align: justify">
 We split the dataset to train (80% samples) and test (20% samples). We train the model and make predictions. With classification_report we calculate precision and recall with actual and predicted values. RandomForest model is the best among them on this data with 0.9610 accuracy on training data. 
-The GridSearchCV or RandomizedSearchCv method have used to find the best parameter for training model.
+The GridSearchCV or RandomizedSearchCv method used to find the best parameter for training model.
 </p>  
 
 <figure>
@@ -157,7 +157,7 @@ The GridSearchCV or RandomizedSearchCv method have used to find the best paramet
         </center>
 </figure>
 
-### Precision_Score 
+### Precision Score 
 
 <p style = "text-align: justify">
     The precision can be calculated by dividing the total number of correctly classified positive examples by the total number of predicted positive examples. A model with high precision means few false positives. In other words, not many non-churners were classified as churners.
@@ -168,7 +168,7 @@ The GridSearchCV or RandomizedSearchCv method have used to find the best paramet
     Recall can be defined as the ratio of the total number of correctly classified positive examples divide to the total number of positive examples. A model with high recall means it correctly classified most churners. 
 </p>
 
-### F1_score
+### F1 Score
 <p style = "text-align: justify">
     The f1_score is calculated using the precision and recall. F-measure which uses Harmonic Mean in place of Arithmetic Mean as it punishes the extreme values more.  
 </p>

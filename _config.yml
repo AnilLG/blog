@@ -21,10 +21,10 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Anil Gaikwad"
 description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+url                      : #"https://anillg.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : #"/blog" # the subpath of your site, e.g. "/blog"
+repository               : #"anillg/blog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : "/assets/images/500x300.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -84,7 +84,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "Anil99913432"
 facebook:
   username               :
   app_id                 :
@@ -123,16 +123,16 @@ author:
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/Anil99913432"
     # - label : "LinkedIn"
-    #   icon : "fa fa-linkedin-square"
-    #   url : "https://www.linkedin.com/in/anil-gaikwad-651598116/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
+      # icon : "fa fa-linkedin-square"
+      # url : "linkedin.com/in/anilgaikwad"
+    # - label: "Facebook"
+    #   icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/AnilLG"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
 # Site Footer
@@ -141,9 +141,12 @@ footer:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/Anil99913432"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
+    # - label: "Facebook"
+      # icon: "fab fa-fw fa-facebook-square"
+      # # url:
+    - label : "LinkedIn"
+      icon : "fa fa-linkedin-square"
+      url : "linkedin.com/in/anilgaikwad"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/AnilLG"
