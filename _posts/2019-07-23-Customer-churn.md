@@ -191,3 +191,8 @@ The GridSearchCV or RandomizedSearchCv method used to find the best parameter fo
             <img src="{{ '/assets/churn_images/AUC_ROC.png'}}">
         </center>
 </figure>
+
+### Future Scope
+<p style = "text-align: justify">
+    You can also improve the accuracy as well as performance of model by balancing dataset or selecting important features or creating new feature.
+</p>
